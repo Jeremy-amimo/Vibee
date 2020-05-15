@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@+id/search_fragment_icon"
                     android:layout_marginRight="19dp"
-               />
+                    android:layout_toRightOf="@+id/search_fragment_icon" />
             </RelativeLayout>
 
         </androidx.appcompat.widget.Toolbar>
