@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Fragments.SearchFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_bar_layout_search"
+        android:background="@android:color/white"
+    >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_black_background"
+            android:id="@+id/search_toolbar"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <ImageView
+                    android:id="@+id/search_fragment_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/search"
+
+                />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:hint="Search"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/search_fragment_icon"
+                    android:layout_marginRight="19dp"
+               />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_view_search"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/app_bar_layout_search"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
