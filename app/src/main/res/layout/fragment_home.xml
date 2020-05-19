@@ -22,6 +22,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="50dp"
+                    android:layout_marginLeft="-29dp"
                     android:src="@drawable/vibe"
                     android:layout_alignParentLeft="true"
                  />

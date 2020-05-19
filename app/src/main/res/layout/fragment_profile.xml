@@ -17,7 +17,7 @@
             android:layout_marginRight="5dp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background=""
+            android:background="#FFFFFF"
             android:id="@+id/profile_toolbar"
             >
 
