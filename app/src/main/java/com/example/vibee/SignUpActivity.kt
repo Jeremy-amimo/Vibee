@@ -16,6 +16,7 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+
         signin_link_btn.setOnClickListener {
             startActivity(Intent(this, SignInActivity::class.java))
         }
@@ -76,7 +77,7 @@ class SignUpActivity : AppCompatActivity() {
         userMap ["username"] = currentUserId
         userMap ["email"] = currentUserId
         userMap ["bio"] =  "Iam using Vibe it is such an amazing app"
-        userMap ["image"] = "gs://vibee-79377.appspot.com/Default Images/profile.png"
+        userMap ["image"] = "gs://vibe-74de6.appspot.com/Default Images/profile.png"
 
         usersRef.child(currentUserId).setValue(userMap)
             .addOnCompleteListener {task ->
@@ -92,11 +93,10 @@ class SignUpActivity : AppCompatActivity() {
                 else
                 {
                     val message = task.exception!!.toString()
-                    Toast.makeText(this,"Error: $message", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"Error: $message",Toast.LENGTH_LONG).show()
                     FirebaseAuth.getInstance().signOut()
                     progressDialog.dismiss()
                 }
             }
     }
-    }
-
+}
