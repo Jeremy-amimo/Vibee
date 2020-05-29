@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Fragments.SearchFragment">
+    tools:context="com.example.vibee.Fragments.SearchFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -34,6 +34,7 @@
 
                 />
                 <EditText
+                    android:id="@+id/search_edit_text"
                     android:layout_width="match_parent"
                     android:hint="Search"
                     android:layout_marginStart="15dp"
@@ -49,6 +50,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:id="@+id/recycler_view_search"
         android:layout_height="match_parent"

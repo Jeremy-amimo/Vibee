@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Fragments.ProfileFragment">
+    tools:context="com.example.vibee.Fragments.ProfileFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -74,10 +74,10 @@
                 android:padding="16dp"
             >
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="120dp"
+                    android:layout_width="80dp"
                     android:id="@+id/pro_image_profile_fragment"
                     android:src="@drawable/profile"
-                    android:layout_height="120dp"
+                    android:layout_height="80dp"
 
                 />
                 
@@ -176,7 +176,7 @@
                     <Button
                         android:id="@+id/edit_account_settings_btn"
                         android:layout_width="170dp"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
                         android:textSize="10dp"
                         android:background="@drawable/buttons_background"
                         android:layout_height="32dp"
