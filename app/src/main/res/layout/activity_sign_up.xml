@@ -116,7 +116,8 @@
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="13dp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold">
+    </TextView>
 
 
 </RelativeLayout>

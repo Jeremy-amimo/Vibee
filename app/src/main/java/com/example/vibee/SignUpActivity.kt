@@ -47,7 +47,7 @@ class SignUpActivity : AppCompatActivity() {
             else -> {
                 val progressDialog = ProgressDialog(this@SignUpActivity)
                 progressDialog.setTitle("SignUp")
-                progressDialog.setMessage("Please wait, this may take a while...")
+                progressDialog.setMessage("Please wait as we sign you up")
                 progressDialog.setCanceledOnTouchOutside(false)
                 progressDialog.show()
 
@@ -83,7 +83,7 @@ class SignUpActivity : AppCompatActivity() {
         userMap["fullname"] = fullName.toLowerCase()
         userMap["username"] = userName.toLowerCase()
         userMap["email"] = email
-        userMap["bio"] = "hey i am using Coding Cafe Instagram Clone App."
+        userMap["bio"] = "hey i am using Vibe."
         userMap["image"] = "https://firebasestorage.googleapis.com/v0/b/vibe-74de6.appspot.com/o/Default%20Images%2Fprofile.png?alt=media&token=b4196f71-bb80-47e0-b2fd-6806d2ba7a75"
 
         usersRef.child(currentUserID).setValue(userMap)
@@ -92,6 +92,16 @@ class SignUpActivity : AppCompatActivity() {
                 {
                     progressDialog.dismiss()
                     Toast.makeText(this, "Account has been created successfully.", Toast.LENGTH_LONG).show()
+
+
+
+
+                    FirebaseDatabase.getInstance().reference
+                        .child("Follow").child(currentUserID)
+                        .child("Following").child(currentUserID)
+                        .setValue(true)
+
+
 
                     val intent = Intent(this@SignUpActivity, MainActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)

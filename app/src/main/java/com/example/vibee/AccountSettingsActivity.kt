@@ -98,6 +98,7 @@ class AccountSettingsActivity : AppCompatActivity()
     private fun updateUserInfoOnly()
     {
         when {
+            imageUri == null -> Toast.makeText(this,"Please select image first",Toast.LENGTH_LONG).show()
             TextUtils.isEmpty(full_name_profile_frag.text.toString()) -> Toast.makeText(this, "Please write full name first.", Toast.LENGTH_LONG).show()
             username_profile_frag.text.toString() == "" -> Toast.makeText(this, "Please write user name first.", Toast.LENGTH_LONG).show()
             bio_profile_frag.text.toString() == "" -> Toast.makeText(this, "Please write your bio first.", Toast.LENGTH_LONG).show()

@@ -118,26 +118,9 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:textSize="14dp"
-        android:layout_above="@+id/delete_account_btn"
+        android:layout_below="@id/bio_profile_frag"
         android:background="@drawable/button_colour_background"
-        android:layout_marginTop="16dp"
-        android:inputType="text"
-        />
-
-    <Button
-        android:textSize="14dp"
-        android:textStyle="bold"
-        android:text="Delete Account"
-        android:textColor="@android:color/white"
-        android:background="@drawable/button_colour_background"
-        android:id="@+id/delete_account_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="6dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="190dp"
         android:inputType="text"
         />
 

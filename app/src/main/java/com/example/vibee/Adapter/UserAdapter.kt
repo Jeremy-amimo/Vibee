@@ -91,13 +91,14 @@ class UserAdapter (private var mContext: Context,
                                         .child("Follow").child(user.getUID())
                                         .child("Followers").child(it1.toString())
                                         .removeValue().addOnCompleteListener { task ->
-                                            if (task.isSuccessful) {
+                                            if (task.isSuccessful)
+                                        {
 
-                                            }
-                                        }
+                                    }
                                 }
                             }
                         }
+                    }
                 }
             }
         }

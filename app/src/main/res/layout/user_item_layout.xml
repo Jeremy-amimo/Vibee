@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
-    android:layout_marginLeft="100dp"
-    android:layout_marginRight="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
     android:layout_centerHorizontal="true"
     android:background="@drawable/button_black_background"
     >
@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
 
         >
-        
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/user_profile_image_search"
             android:layout_width="120dp"
